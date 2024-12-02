@@ -5,12 +5,12 @@
 
 using namespace std;
 
-// Temel veri tiplerini tanımlıyoruz.
+// Temel veri tiplerini tanımlama
 typedef int NimbleInt;
 typedef double NimbleFloat;
 typedef string NimbleString;
 
-// Nimble dilindeki fonksiyon tiplerini tanımlıyoruz.
+// Nimble dilindeki fonksiyon tiplerini tanımlama
 typedef void (*NimbleFunction)(void);
 
 // Basit bir yazdırma fonksiyonu
@@ -58,15 +58,15 @@ int main() {
     // Nimble dilinde bir değişken tanımlıyoruz
     NimbleVariable var("age", 25, 0.0, "Nimble User");
 
-    // Değişkeni yazdıralım
+    // Değişken yazdırma
     var.print();
 
-    // Bir fonksiyon oluşturalım ve çalıştıralım
+    // Bir fonksiyon denemesi
     NimbleCommand cmd("PrintMessage", []() {
         printNimbleString("Hello from Nimble!");
     });
 
-    // Komutu çalıştırıyoruz
+    // Komutu çalıştırma
     cmd.execute();
 
     return 0;
